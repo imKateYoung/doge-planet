@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+.App {
+  text-align: center;
+  font-family: "Rakkas";
+}
+
+.App > h1{
+  position: relative;
+  border: none;
+  border-bottom: 5px solid #ad7900;
+  border-radius: 8px;
+  background: #fab70f;
+  color: white;
+  font-size: 1.75em;
+  font-family: 'Rakkas';
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  outline: none;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.08s;
+  
+  
+}
+
+button{
+  position: relative;
+  border: none;
+  border-bottom: 5px solid #ad7900;
+  border-radius: 8px;
+  background: #fab70f;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Rakkas';
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  outline: none;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.08s;
+}
+
+  button:hover {
+    background: #d49b0d;
+    border-bottom-color: #946800;
+    color: #eee;
+  }
+
+    button:active {
+    bottom: -3px;
+    border-bottom: 2px solid #543c00;
+    background: #a17300;
+    color: #ada48b;
+  } 
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-columns: minmax(200px,auto);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  position: relative;
+  justify-content: center;
+
+}
+
+.App-img{
+  margin-top: 5%;
+  padding-left: 1%;
+  border-radius: 5px;
+  width:200px;
+  height: 200px;
+  
+  
+}
+
+@media screen and (max-width:600px) {
+  .App {
+    margin: auto;
+}
+  .App > h1{
+    margin: auto;
+    justify-content: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+
+
+}
